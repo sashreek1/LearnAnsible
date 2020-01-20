@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  roles:
+    - role: startService
+      service: mariadb
+    - role: stopService
+      service: httpd
+    - role: restartService
+      service: jellyfin
+
